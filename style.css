@@ -1,0 +1,74 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9ebf5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Flex container for the cards */
+.card-container {
+    /* color: red; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual card styling */
+.card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 4px 5px 16px grey;
+    width: 300px;
+    text-align: center;
+}
+
+/* Image styling */
+.card img {
+    width: 100%;
+    height: 50%;
+}
+
+/* Button styling */
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+}
+
+.flash {
+    background-color: #A52A2A;
+}
+
+.superman {
+    background-color: #4682B4;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
